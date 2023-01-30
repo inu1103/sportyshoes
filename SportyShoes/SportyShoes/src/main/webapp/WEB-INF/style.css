@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+	font-family: Tahoma, sans-serif;
+	background:url("https://media.istockphoto.com/id/1331579485/vector/background-curved-light-blue.jpg?s=612x612&w=0&k=20&c=Wslr-PIxcQDoxXmzC7_w8rbFM9_s_5Jz99tE3ftNM1A=");
+	background-size:cover;
+	background-attachment: fixed;
+}
+img{
+    animation: move 2s;
+}
+@keyframes move{
+    from{transform:translateX(-100%)}
+    to{transform:translateX(0)}
+}
+
+@keyframes welcome-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.textboxstyle {
+width: 200px;
+padding: 5px;
+margin: 5px;
+border: 3px solid black;
+}
+
+h1 {
+  animation: welcome-animation 2s ease-in-out;
+  font-size: 3em;
+  text-align: center;
+}
+
+.welcome-animation {
+    animation: welcome-animation 2s ease-in-out;
+}
+.animated-message {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.animated-message h1 {
+  font-size: 36px;
+  color: green;
+  text-transform: uppercase;
+  animation: message-animation 2s ease-in-out;
+}
+
+.animated-message h1:nth-of-type(2) {
+  color: #333;
+  font-size: 25px;
+}
+
+@keyframes message-animation {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: 'Montserrat', sans-serif; /* Use a unique font style */
+  font-weight: bold; /* Make the text bold */
+  color: #000000; /* Use a different color */
+  text-shadow: 2px 2px #aaa; /* Add a text shadow */
+  text-transform: uppercase; /* Capitalize all letters */
+  letter-spacing: 2px; /* Increase the spacing between letters */
+}
+
+
+img {
+  background-color: transparent;
+}
+
